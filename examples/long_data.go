@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strings"
 	"net/http"
-	"github.com/ziutek/mymysql/mysql"
-	_ "github.com/ziutek/mymysql/thrsafe"
+	"db/mymysql/mysql"
+	_ "db/mymysql/thrsafe"
 )
 
 func printOK() {

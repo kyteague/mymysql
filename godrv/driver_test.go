@@ -1,9 +1,9 @@
 package godrv
 
 import (
-	"database/sql"
+	"db/database/sql"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
+	"db/mymysql/mysql"
 	"testing"
 	"time"
 )

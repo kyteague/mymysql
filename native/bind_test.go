@@ -3,7 +3,7 @@ package native
 import (
 	"bufio"
 	"bytes"
-	"github.com/ziutek/mymysql/mysql"
+	"db/mymysql/mysql"
 	"math"
 	"reflect"
 	"strconv"

@@ -1,13 +1,13 @@
-//MySQL driver for Go database/sql package
+//MySQL driver for Go db/database/sql package
 package godrv
 
 import (
-	"database/sql"
-	"database/sql/driver"
+	"db/database/sql"
+	"db/database/sql/driver"
 	"errors"
 	"fmt"
-	"github.com/ziutek/mymysql/mysql"
-	"github.com/ziutek/mymysql/native"
+	"db/mymysql/mysql"
+	"db/mymysql/native"
 	"io"
 	"net"
 	"strconv"
@@ -405,15 +405,15 @@ func (drv *Driver) SetDialer(dialer Dialer) {
 	drv.dialer = dialer
 }
 
-// Driver automatically registered in database/sql
+// Driver automatically registered in db/database/sql
 var d = Driver{proto: "tcp", raddr: "127.0.0.1:3306"}
 
-// Register calls Register method on driver registered in database/sql
+// Register calls Register method on driver registered in db/database/sql
 func Register(query string) {
 	d.Register(query)
 }
 
-// SetDialer calls SetDialer method on driver registered in database/sql
+// SetDialer calls SetDialer method on driver registered in db/database/sql
 func SetDialer(dialer Dialer) {
 	d.SetDialer(dialer)
 }

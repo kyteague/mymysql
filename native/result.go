@@ -2,7 +2,7 @@ package native
 
 import (
 	"errors"
-	"github.com/ziutek/mymysql/mysql"
+	"db/mymysql/mysql"
 	"log"
 	"math"
 	"strconv"
